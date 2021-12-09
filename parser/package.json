@@ -1,0 +1,10 @@
+{
+  "name": "tree-sitter-expressions",
+  "version": "1.0.0",
+  "main": "bindings/node",
+  "author": "Tobias Zimmermann",
+  "license": "MIT",
+  "dependencies": {
+    "tree-sitter-cli": "^0.20.1"
+  }
+}

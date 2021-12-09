@@ -1,0 +1,23 @@
+[package]
+name = "tree-sitter-expressions"
+version = "0.0.1"
+categories = ["parsing", "text-editors"]
+edition = "2018"
+license = "MIT"
+
+build = "bindings/rust/build.rs"
+include = [
+  "bindings/rust/*",
+  "grammar.js",
+  "queries/*",
+  "src/*",
+]
+
+[lib]
+path = "bindings/rust/lib.rs"
+
+[dependencies]
+tree-sitter = "~0.20.1"
+
+[build-dependencies]
+cc = "1.0"
